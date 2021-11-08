@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="text-gray-600 font-body">
+    <div>
+        <div class="flex bg-black w-full flex-grow">
+            <div class="text-white flex space-x-3 cursor-pointer ml-2">
+                <p>
+                    <i class="fas fa-border-none"></i>
+                </p>
+                <p>Fimbay</p>
+            </div>
+            <div class="mr-2 text-white flex justify-end w-full space-x-3 cursor-pointer">
+                <p>
+                    <i class="fas fa-bell"></i>
+                </p>
+                <p class="">
+                    <i class="far fa-comment-alt"></i>
+                </p>
+                <p>
+                    <i class="fas fa-cog"></i>
+                </p>
+                <div class="bg-white h-6 w-6 overflow-hidden">
+                    <img src="images/curry.jpg" alt="" class="rounded-full h-12 w-12" />
+                </div>
+                <p>Admin</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-red-500 flex justify-between mt-5 border-b-2">
+        <div class="flex flex-col space-y-3 ml-5 mb-2">
+            <p class="text-xl font-bold">APPLICATION</p>
+
+            <p class="
+              text-sm
+              font-light
+              py-1
+              cursor-pointer
+              ml-5
+              mr-5
+              bg-red-500
+              text-white
+            " @click="ed">
+                CREATE
+            </p>
+        </div>
+        <div class="mr-5 w-96 relative">
+            <input type="text" placeholder="Search" class="outline-none border-2 w-full flex rounded-3xl px-5 py-2"
+                @change="onChange($event)" />
+            <p class="text-black absolute top-2 right-5 cursor-pointer">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
